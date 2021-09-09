@@ -14,3 +14,10 @@ header{
 h1{
     font-size: 110px;
 }
+
+.jumbotron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
