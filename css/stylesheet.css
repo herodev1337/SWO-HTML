@@ -49,3 +49,8 @@ footer{
 }
 
 textarea { resize:none; }
+
+.text-reset{
+    text-decoration: none!important;
+    color: #FFF;
+}
