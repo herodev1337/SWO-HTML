@@ -151,11 +151,11 @@ particlesJS('particle-js',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "grab"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true
@@ -192,3 +192,8 @@ particlesJS('particle-js',
 );
 
 /* PARTICLEJS END*/
+
+/* SMOOTH SCROLLING */
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#navbar'
+  })
