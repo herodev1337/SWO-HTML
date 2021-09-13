@@ -8,12 +8,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+#home{
     background-image: url(../img/bg_home.jpg);
+    background-repeat: cover !important;
     filter: grayscale(0.7) opacity(90%);
 }
 .navbar-dark{
-    filter: opacity(60%);
+    filter: opacity(70%);
 }
 
 h1{
@@ -57,4 +58,10 @@ textarea { resize:none; }
 .text-reset{
     text-decoration: none!important;
     color: #FFF;
+}
+
+#chtsd{
+    overflow: visible;
+    position: absolute;
+    bottom: 0;
 }
