@@ -25,28 +25,28 @@
                     <div class="container">
                         <div class="row text-center">
                             <!--Container für Home-Icon + Text-->
-                            <div class="col mx-md-3 fs-r-3">
+                            <div class="col mx-md-3 fs-r-4">
                                 <a class="nav-link" href="#home">
                                 <span class="fas fa-home"></span><br>
                                 <span class="section">Home</span>
                                 </a>
                             </div>
                             <!--Container für About me-Icon + Text-->
-                            <div class="col mx-md-3 fs-r-3">
+                            <div class="col mx-md-3 fs-r-4">
                                 <a class="nav-link" href="#about">
                                 <span class="fas fa-fingerprint"></span><br>
                                 <span class="section">About</span>
                                 </a>
                             </div>
                             <!--Container für Skills-Icon + Text-->
-                            <div class="col mx-md-3 fs-r-3">
+                            <div class="col mx-md-3 fs-r-4">
                                 <a class="nav-link" href="#skills">
                                 <span class="fas fa-check"></span><br>
                                 <span class="section">Skills</span>
                                 </a>
                             </div>
                             <!--Container für Contact-Icon + Text-->
-                            <div class="col mx-md-3 fs-r-3">
+                            <div class="col mx-md-3 fs-r-4">
                                 <a class="nav-link" href="#contact">
                                 <span class="fas fa-envelope"></span><br>
                                 <span class="section">Contact</span>
@@ -58,18 +58,22 @@
             </nav>
             
             <section id="home">
-                <div class="container-fluid d-flex justify-content-center w-100 min-vh-100 text-center">
-                    <div class="w-100" id="particle-js">
-                        <div class="jumbotron">
-                            <h1 class="letters">Lorem ipsum</h1>
-                            <h2 class="mb-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing el aspect et accus temp</h2>
+                <div class="container w-100 min-vh-100 text-center">
+                    <div class="w-100">
+                        <div id="particle-js">
+                            <div class="jumbotron">
+                                <h1 class="letters">Lorem ipsum</h1>
+                                <h2 class="mb-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing el aspect et accus temp</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="animate__animated animate__bounce animate__slower animate__infinite fs-r-4 my-md-3 my-sm-2" id="chtsd">
-                        <a class="text-white font-weight-bold text-decoration-none" href="#about">
-                        Click here to scroll down<br>
-                        <span class="fas fa-sort-down"></span>
-                        </a>
+                        <div class="d-flex justify-content-center">
+                            <div class="animate__animated animate__bounce animate__slower animate__infinite fs-r-4 my-3" id="chtsd">
+                                <a class="text-white font-weight-bold text-decoration-none" href="#about">
+                                Click here to scroll down<br>
+                                <span class="fas fa-sort-down"></span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -122,7 +126,7 @@
                     
                     <div class="row my-5">
                         <div class="col-md-3 d-flex align-items-stretch">
-                            <div class="card text-white bg-dark mb-3 border">
+                            <div class="card text-white bg-dark mb-3 border mx-auto">
                                 <div class="card-header mt-3">
                                     <i class="fab fa-html5 fa-5x"></i><br>
                                     <span class="fw-bold fs-3">HTML</span>
@@ -138,7 +142,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 d-flex align-items-stretch">
-                            <div class="card text-white bg-dark mb-3 border">
+                            <div class="card text-white bg-dark mb-3 border mx-auto">
                                 <div class="card-header mt-3">
                                     <i class="fab fa-js fa-5x"></i><br>
                                     <span class="fw-bold fs-3">JavaScript</span>
@@ -153,7 +157,7 @@
                             </div>                          
                         </div>
                         <div class="col-md-3 d-flex align-items-stretch">
-                            <div class="card text-white bg-dark mb-3 border">
+                            <div class="card text-white bg-dark mb-3 border mx-auto">
                                 <div class="card-header mt-3">
                                     <i class="fab fa-css3-alt fa-5x"></i><br>
                                     <span class="fw-bold fs-3">CSS</span>
@@ -168,7 +172,7 @@
                             </div>                         
                         </div>
                         <div class="col-md-3 d-flex align-items-stretch">
-                            <div class="card text-white bg-dark mb-3 border">
+                            <div class="card text-white bg-dark mb-3 border mx-auto">
                                 <div class="card-header mt-3">
                                     <i class="fab fa-php fa-5x"></i><br>
                                     <span class="fw-bold fs-3">PHP</span>
@@ -230,9 +234,12 @@
                                 <label for="email">Email address</label>
                                 <input id="email" type="email" class="form-control" placeholder="Enter your email address">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mb-5">
                                 <label for="text">Message</label>
                                 <textarea class="form-control" id="text" rows="5" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="button" class="btn btn-primary">Send</button>
                             </div>
                         </form>
                     </div>
@@ -251,9 +258,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script src="js/progressbar.js"></script>
-        <script src="js/inViewport.js"></script>
-        <script src="js/resizeNavbar.js"></script>
-        <script src="js/letterize.js"></script>
-        <script src="js/particle.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
