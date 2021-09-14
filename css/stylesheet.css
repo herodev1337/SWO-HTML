@@ -1,22 +1,18 @@
-html {
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-
-body{ 
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-#home{
+#home {
     background-image: url(../img/bg_home.jpg);
     filter: grayscale(0.7) opacity(90%);
 }
-.navbar-dark{
-    filter: opacity(70%);
+
+.navbar-dark {
+    filter: opacity(50%);
+    border-bottom: 1px solid white;
 }
 
-h1{
+h1 {
     font-size: 110px;
 }
 
@@ -27,75 +23,72 @@ h1{
     transform: translate(-50%, -50%);
 }
 
-.fs-r-1{
-    font-size: 5vh;
+.fs-r-1 {
+    font-size: 5vh!important;
 }
 
-.fs-r-2{
-    font-size: 4vh;
+.fs-r-2 {
+    font-size: 4vh!important;
 }
 
-.fs-r-3{
-    font-size: 2.5vh;
+.fs-r-3 {
+    font-size: 2.5vh!important;
 }
 
-.fs-r-4{
-    font-size: 2vh;
+.fs-r-4 {
+    font-size: 2vh!important;
 }
 
-.fs-r-5{
-    font-size: 1vh;
+.fs-r-5 {
+    font-size: 1vh!important;
 }
 
-footer{
+footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-textarea { resize:none; }
+textarea {
+    resize: none;
+}
 
-.text-reset{
+.text-reset {
     text-decoration: none!important;
     color: #FFF;
 }
 
-#chtsd{
-    overflow: visible;
-    position: absolute;
-    bottom: 0;
-}
-
-.card{
+.card {
     max-width: 75vw;
 }
 
-#particle-js{
+#particle-js {
     width: 100%;
-    height: 100%; 
-    z-index: -1; 
-    overflow: hidden; 
-    position:fixed; 
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    position: fixed;
 }
 
-.pace {
-	-webkit-pointer-events: none;
-	pointer-events: none;
-
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
 }
 
-.pace-inactive {
-	display: none;
+::-webkit-scrollbar-thumb {
+    background: #B3AFB3;
+    border-radius: 9px;
 }
 
-.pace .pace-progress {
-	background: #000000;
-	position: fixed;
-	z-index: 2000;
-	top: 0;
-	right: 100%;
-	width: 100%;
-	height: 2px;
+::-webkit-scrollbar-thumb:hover {
+    background: #B3AFB3;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFFFFF;
+    border-radius: 9px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+.nav-font {
+    font-size: calc(22px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
