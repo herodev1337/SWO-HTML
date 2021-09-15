@@ -1,240 +1,234 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js" data-headjs-load="js/script.js" integrity="sha512-8Nk/zoTKjNixnM15wXjpF26KR4Ln87cc5Yllc5xP54wwbcKnljAAn2JP+tYAS8+4e7s/XK8XTiDH0Ltw2fmoBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-    <div class="w-100 text-white bg-dark">
-
-        <!--Navbar | Should be done-->
-        <nav class="navbar navbar-dark bg-dark fixed-top" id="navbar">
-            <div class="navbar-nav mx-auto">
-                <div class="container">
-                    <div class="row text-center">
-                        <!--Container für Home-Icon + Text-->
-                        <div class="col mx-md-3 fs-r-4">
-                            <a class="nav-link" href="#home">
-                                <span class="fas fa-home"></span><br>
-                                <span class="section">Home</span>
-                            </a>
-                        </div>
-                        <!--Container für About me-Icon + Text-->
-                        <div class="col mx-md-3 fs-r-4">
-                            <a class="nav-link" href="#about">
-                                <span class="fas fa-fingerprint"></span><br>
-                                <span class="section">About</span>
-                            </a>
-                        </div>
-                        <!--Container für Skills-Icon + Text-->
-                        <div class="col mx-md-3 fs-r-4">
-                            <a class="nav-link" href="#skills">
-                                <span class="fas fa-check"></span><br>
-                                <span class="section">Skills</span>
-                            </a>
-                        </div>
-                        <!--Container für Contact-Icon + Text-->
-                        <div class="col mx-md-3 fs-r-4">
-                            <a class="nav-link" href="#contact">
-                                <span class="fas fa-envelope"></span><br>
-                                <span class="section">Contact</span>
-                            </a>
-                        </div>
+<body class="bg-dark text-white">
+    <!--Navbar | Should be done-->
+    <nav class="navbar navbar-dark fixed-top" id="navbar">
+        <div class="navbar-nav mx-auto">
+            <div class="container">
+                <div class="row text-center">
+                    <!--Container für Home-Icon + Text-->
+                    <div class="col mx-md-3 nav-font">
+                        <a class="nav-link" href="#home">
+                            <span class="fas fa-home"></span><br>
+                            <span class="nav-caption animate__animated">Home</span>
+                        </a>
+                    </div>
+                    <!--Container für About me-Icon + Text-->
+                    <div class="col mx-md-3 nav-font">
+                        <a class="nav-link" href="#about">
+                            <span class="fas fa-fingerprint"></span><br>
+                            <span class="nav-caption">About</span>
+                        </a>
+                    </div>
+                    <!--Container für Skills-Icon + Text-->
+                    <div class="col mx-md-3 nav-font">
+                        <a class="nav-link" href="#skills">
+                            <span class="fas fa-check"></span><br>
+                            <span class="nav-caption">Skills</span>
+                        </a>
+                    </div>
+                    <!--Container für Contact-Icon + Text-->
+                    <div class="col mx-md-3 nav-font">
+                        <a class="nav-link" href="#contact">
+                            <span class="fas fa-envelope"></span><br>
+                            <span class="nav-caption">Contact</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </nav>
-
-        <!-- Home-Section -->
-        <header id="home">
-            <!-- Div für die Partikel -->
-            <div id="particle-js"></div>
-            <div class="container text-center vh-100 w-100">
-                <div class="container">
-                    <h1 class="letters">Lorem ipsum</h1>
-                    <h2 class="mb-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing el aspect et accus temp</h2>
-                </div>
-                <!-- CHTSD am Bottom vom VP -->
-                <div class="d-flex justify-content-center">
-                    <div class="animate__animated animate__bounce animate__slower animate__infinite fs-r-4 my-3" id="chtsd">
-                        <a class="text-white font-weight-bold text-decoration-none" href="#about">
-                                Click here to scroll down<br>
-                                <span class="fas fa-sort-down"></span>
-                                </a>
+        </div>
+    </nav>
+    <section id="home">
+        <div id="particle-js"></div>
+        <div class="container vh-100 text-center main-container">
+            <div class="row h-100">
+                <div class="col my-auto">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <h1 class="letters">Benno Heichel</h1>
+                            <h2 class="mb-md-5 animate__animated animate__bounceInLeft">Software Developer</h2>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- About-Section -->
-        <section id="about">
-            <div class="container vh-100 ">
-                <div class="container text-center">
                     <div class="row">
                         <div class="col">
-                            <h2>About me</h2>
-                            <div class="row row-cols-sm-1 row-cols-md-2">
-                                <div class="col-md-7 ">
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+                            <!-- Hacky aber Working -->
+                            <div class="animate__animated animate__bounce animate__slower animate__infinite w-100 scroll-down">
+                                <a class="font-weight-bold text-decoration-none" href="#about">
+                                    <span>Click here to scroll down<br></span>
+                                    <span class="fas fa-sort-down"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container-fluid vh-100 main-container">
+            <div class="row h-100">
+                <div class="col my-auto text-center">
+                    <h2>About me</h2>
+                    <div class="row">
+                        <div class="col">
+                            <p>I'm a 17 year old dude based in Germany. I'm on my way to become a software developer and I have great ideas in my head.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container-fluid min-vh-100 main-container text-center">
+            <div class="row">
+                <div class="col my-auto">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Skills</h2>
+                            <p>Here is a quick overview of my web skills!</p>
+                        </div>
+                    </div>
+
+                    <div class="row w-md-75 mx-auto">
+                        <div class="col-sm-12 col-md-3 d-flex align-items-stretch">
+                            <div class="card text-white bg-dark mb-3 border mx-auto">
+                                <div class="card-header mt-3">
+                                    <i class="fab fa-html5 fa-5x"></i><br>
+                                    <span class="fw-bold fs-3">HTML</span>
+
+                                    <div class="container my-4 font-weight-light fs-1">
+                                        <div id="progress-animated-html" aria-valuenow="90"></div>
+                                    </div>
                                 </div>
-                                <div class="col-md-5">
-                                    <img class="w-75" loading=lazy src="https://via.placeholder.com/3024x4032.png">
+
+                                <div class="card-body">
+                                    <p class="card-text">I know all the basic things about HTML. I'm also pretty confident with "advanced HTML"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 d-flex align-items-stretch">
+                            <div class="card text-white bg-dark mb-3 border mx-auto">
+                                <div class="card-header mt-3">
+                                    <i class="fab fa-js fa-5x"></i><br>
+                                    <span class="fw-bold fs-3">JavaScript</span>
+
+                                    <div class="container my-4 font-weight-light fs-1">
+                                        <div id="progress-animated-js" aria-valuenow="60"></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">I know JavaScript well. jQuery and other popular libaries are no problem. I also code some apps in node.js</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 d-flex align-items-stretch">
+                            <div class="card text-white bg-dark mb-3 border mx-auto">
+                                <div class="card-header mt-3">
+                                    <i class="fab fa-css3-alt fa-5x"></i><br>
+                                    <span class="fw-bold fs-3">CSS</span>
+
+                                    <div class="container my-4 font-weight-light fs-1">
+                                        <div id="progress-animated-css" aria-valuenow="50"></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">I hate CSS. Because of much trial and error and Bootstrap, i learned to do basic stuff fast and efficent. On bigger projects, it could take longer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 d-flex align-items-stretch">
+                            <div class="card text-white bg-dark mb-3 border mx-auto">
+                                <div class="card-header mt-3">
+                                    <i class="fab fa-php fa-5x"></i><br>
+                                    <span class="fw-bold fs-3">PHP</span>
+
+                                    <div class="container my-4 font-weight-light fs-1">
+                                        <div id="progress-animated-php" aria-valuenow="80"></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Did some PHP back in 2020. Had a great time and would love to do something in PHP again</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Skills-Section -->
-        <section id="skills">
-            <div class="container text-center vh-100">
-                <div class="row">
-                    <div class="col">
-                        <h2>Skills</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing el aspect et accus temp</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container-fluid vh-100 main-container text-center" style="max-width: 400px;">
+            <div class="row h-100">
+                <div class="col my-auto">
+                    <!--Row für Text über Social Media Icons-->
+                    <div class="row">
+                        <div class="col">
+                            <h2>Contact</h2>
+                            <p>If you have any questions, please don't hesitate to ask</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3 d-flex align-items-stretch">
-                        <div class="card text-white bg-dark mb-3 border mx-auto">
-                            <div class="card-header mt-3">
-                                <i class="fab fa-html5 fa-5x"></i><br>
-                                <span class="fw-bold fs-3">HTML</span>
-
-                                <div class="container my-4 font-weight-light fs-1">
-                                    <div id="progress-animated-html" aria-valuenow="90"></div>
-                                </div>
+                    <!-- Row für Social Media Icons-->
+                    <div class="row my-3">
+                        <div class="container d-flex align-items-center">
+                            <div class="col">
+                                <a class="text-reset" href="https://github.com/herodev1337/">
+                                    <i class="fab fa-github fa-3x"></i><br>
+                                    <span class="fw-bold fs-r-4">GitHub</span>
+                                </a>
                             </div>
-
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="col">
+                                <a class="text-reset" href="example.org">
+                                    <i class="fab fa-instagram fa-3x"></i><br>
+                                    <span class="fw-bold fs-r-4">Instagram</span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="text-reset" href="example.org">
+                                    <i class="fab fa-telegram fa-3x"></i><br>
+                                    <span class="fw-bold fs-r-4">Telegram</span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="text-reset" href="example.org">
+                                    <i class="fab fa-whatsapp fa-3x"></i><br>
+                                    <span class="fw-bold fs-r-4">WhatsApp</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex align-items-stretch">
-                        <div class="card text-white bg-dark mb-3 border mx-auto">
-                            <div class="card-header mt-3">
-                                <i class="fab fa-js fa-5x"></i><br>
-                                <span class="fw-bold fs-3">JavaScript</span>
+                    <!--Contact-Form-->
+                    <div class="row mx-2 text-start">
+                        <form>
+                            <div class="form-group mb-2">
+                                <label for="email">Email address</label>
+                                <input id="email" type="email" class="form-control" placeholder="Enter your email address">
+                            </div>
+                            <div class="form-group mb-5">
+                                <label for="text">Message</label>
+                                <textarea class="form-control" id="text" rows="5" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="button" class="btn btn-primary">Send</button>
+                            </div>
+                        </form>
 
-                                <div class="container my-4 font-weight-light fs-1">
-                                    <div id="progress-animated-js" aria-valuenow="60"></div>
-                                </div>
+                        <!--Footer-->
+                        <footer class="text-muted text-center">
+                            <div class="container">
+                                <p>Made with <i class="fas fa-heart"></i></p>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex align-items-stretch">
-                        <div class="card text-white bg-dark mb-3 border mx-auto">
-                            <div class="card-header mt-3">
-                                <i class="fab fa-css3-alt fa-5x"></i><br>
-                                <span class="fw-bold fs-3">CSS</span>
-
-                                <div class="container my-4 font-weight-light fs-1">
-                                    <div id="progress-animated-css" aria-valuenow="50"></div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex align-items-stretch">
-                        <div class="card text-white bg-dark mb-3 border mx-auto">
-                            <div class="card-header mt-3">
-                                <i class="fab fa-php fa-5x"></i><br>
-                                <span class="fw-bold fs-3">PHP</span>
-
-                                <div class="container my-4 font-weight-light fs-1">
-                                    <div id="progress-animated-php" aria-valuenow="80"></div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
+                        </footer>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Contact-Section -->
-        <section id="contact">
-            <div class="container text-center vh-100" style="max-width: 400px;">
-                <!--Row für Text über Social Media Icons-->
-                <div class="row">
-                    <div class="col">
-                        <h2>Contact</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing el aspect et accus temp</p>
-                    </div>
-                </div>
-                <!-- Row für Social Media Icons-->
-                <div class="row">
-                    <div class="container d-flex align-items-center">
-                        <div class="col">
-                            <a class="text-reset" href="">
-                                <i class="fab fa-github fa-3x"></i><br>
-                                <span class="fw-bold fs-r-4">GitHub</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="text-reset" href="">
-                                <i class="fab fa-instagram fa-3x"></i><br>
-                                <span class="fw-bold fs-r-4">Instagram</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="text-reset" href="">
-                                <i class="fab fa-telegram fa-3x"></i><br>
-                                <span class="fw-bold fs-r-4">Telegram</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="text-reset" href="">
-                                <i class="fab fa-whatsapp fa-3x"></i><br>
-                                <span class="fw-bold fs-r-4">WhatsApp</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--Contact-Form-->
-                <div class="row mx-2 text-start">
-                    <form>
-                        <div class="form-group mb-2">
-                            <label for="email">Email address</label>
-                            <input id="email" type="email" class="form-control" placeholder="Enter your email address">
-                        </div>
-                        <div class="form-group mb-5">
-                            <label for="text">Message</label>
-                            <textarea class="form-control" id="text" rows="5" placeholder="Enter your message"></textarea>
-                        </div>
-                        <div class="form-group text-center">
-                            <button type="button" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
-
-                    <!--Footer-->
-                    <footer class="text-muted text-center">
-                        <div class="container">
-                            <p>Made with <i class="fas fa-heart"></i></p>
-                        </div>
-                    </footer>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!--Head.JS lädt alle assets-->
+        </div>
+    </section>
     <script>
         head.load(
             "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js",

@@ -11,13 +11,6 @@ h1 {
     font-size: 110px;
 }
 
-.jumbotron {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .fs-r-1 {
     font-size: 5vh!important;
 }
@@ -83,17 +76,14 @@ textarea {
     font-size: calc(22px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.navbar{
-    transition-duration: 0.5s;
-}
-
 .nav-shrink{
     transition: opacity 0.5s ease-out;
     opacity: 0;
     height: 0;
-    overflow: hidden;
 }
-.nav-shrink.active{
+
+.nav-grow{
+    transition: opacity 0.5s ease-in;
     opacity: 1;
     height: auto;
 }
