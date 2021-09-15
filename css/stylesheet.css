@@ -1,3 +1,8 @@
+html, body {
+    height:100%;
+    overflow:hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -48,10 +53,7 @@ textarea {
     width: 100%;
     z-index: -1;
     overflow: hidden;
-    position: fixed;
-    -webkit-position: absolute;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    position: absolute;
 
 }
 
