@@ -4,12 +4,7 @@ body {
 
 #home {
     background-image: url(../img/bg_home.jpg);
-    filter: grayscale(0.7) opacity(90%);
-}
-
-.navbar-dark {
-    filter: opacity(50%);
-    border-bottom: 1px solid white;
+    filter: grayscale(0.7) opacity(70%);
 }
 
 h1 {
@@ -52,11 +47,6 @@ textarea {
     resize: none;
 }
 
-.text-reset {
-    text-decoration: none!important;
-    color: #FFF;
-}
-
 .card {
     max-width: 300px;
 }
@@ -91,4 +81,30 @@ textarea {
 
 .nav-font {
     font-size: calc(22px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.navbar{
+    transition-duration: 0.5s;
+}
+
+.nav-shrink{
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+.nav-shrink.active{
+    opacity: 1;
+    height: auto;
+}
+
+.scroll-down{
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+    bottom: 10;
+}
+.scroll-down a{
+    text-decoration: none!important;
+    color: #FFF;
 }
